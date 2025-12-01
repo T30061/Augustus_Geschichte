@@ -1,1 +1,191 @@
-eloooooooooo
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kaiser Augustus – Steckbrief</title>
+  <meta name="description" content="Steckbrief und interaktive Website über Kaiser Augustus mit historischen Fakten, Bildern und kleinen JavaScript-Features." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://t30061.github.io/Augustus_Geschichte/augustus/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Kaiser Augustus</h1>
+      <p class="subtitle">Erster römischer Kaiser und Begründer des Prinzipats (27 v. Chr. – 14 n. Chr.)</p>
+      <nav class="nav">
+        <a href="#steckbrief">Steckbrief</a>
+        <a href="#herrschaft">Machtübernahme & Herrschaft</a>
+        <a href="#leistungen">Bedeutung & Leistungen</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#quellen">Quellen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro" class="intro">
+      <div class="container">
+        <div class="hero">
+          <figure class="hero-image">
+            <!-- Beispielbild: Statue/Porträt (Online-Version zeigt Kartenansicht) -->
+            <img src="" alt="Porträtstatue von Kaiser Augustus" loading="lazy">
+            <figcaption>Porträt von Augustus (Beispielbild)</figcaption>
+          </figure>
+          <div class="hero-text">
+            <p>
+              Kaiser Augustus wandelte die Römische Republik in den Prinzipat um, leitete die Pax Romana ein und stabilisierte das Reich dauerhaft.
+              Sein politisches Geschick, umfassende Reformen und Kulturförderung prägen sein historische Bild.
+            </p>
+            <div class="actions">
+              <button id="show-quote" class="btn">Zitat anzeigen</button>
+              <button id="toggle-timeline" class="btn btn-secondary">Zeitleiste ein/aus</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="steckbrief" class="section">
+      <div class="container">
+        <h2>Steckbrief</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Grunddaten</h3>
+            <ul class="facts">
+              <li><strong>Geburtsname:</strong> Gaius Octavius (später Gaius Julius Caesar Octavianus)</li>
+              <li><strong>Geboren:</strong> 23. September 63 v. Chr. (Rom)</li>
+              <li><strong>Gestorben:</strong> 19. August 14 n. Chr. (Nola)</li>
+              <li><strong>Alter:</strong> 75 Jahre</li>
+              <li><strong>Titel:</strong> „Augustus“ = „der Erhabene“ (verliehen 27 v. Chr.)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Familie</h3>
+            <ul class="facts">
+              <li><strong>Adoptivvater:</strong> Julius Caesar</li>
+              <li><strong>Ehefrauen:</strong> Scribonia, Livia Drusilla</li>
+              <li><strong>Kinder:</strong> Tochter Julia</li>
+              <li><strong>Nachfolger:</strong> Tiberius (Stiefsohn)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Rolle & Symbolik</h3>
+            <ul class="facts">
+              <li><strong>Princeps:</strong> „Erster Bürger“ statt offener Monarch</li>
+              <li><strong>Dynastie:</strong> Beginn der julisch-claudischen Linie</li>
+              <li><strong>Monat:</strong> August nach ihm benannt</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="herrschaft" class="section">
+      <div class="container">
+        <h2>Machtübernahme & Herrschaft</h2>
+        <div class="timeline" id="timeline">
+          <div class="timeline-item">
+            <h4>44 v. Chr.</h4>
+            <p>Nach der Ermordung Julius Caesars wird Octavian dessen Adoptivsohn und politischer Erbe.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>43–32 v. Chr.</h4>
+            <p>Zweites Triumvirat mit Marcus Antonius und Lepidus; Machtkämpfe gegen Gegner der Caesarianer.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>31 v. Chr.</h4>
+            <p>Sieg bei Actium über Antonius und Kleopatra – Weg zur Alleinherrschaft.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>27 v. Chr.</h4>
+            <p>„Restauratio rei publicae“: offizielles Festhalten an republikanischen Formen, faktisch Beginn des Prinzipats; Verleihung des Namens „Augustus“.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>14 n. Chr.</h4>
+            <p>Tod des Augustus; Nachfolge durch Tiberius.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leistungen" class="section">
+      <div class="container">
+        <h2>Bedeutung & Leistungen</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Pax Romana</h3>
+            <p>Augustus leitete eine lange Phase relativen Friedens und Stabilität ein, die Ausbreitung von Handel, Infrastruktur und Kultur begünstigte.</p>
+          </div>
+          <div>
+            <h3>Reformen</h3>
+            <ul class="facts">
+              <li><strong>Verwaltung:</strong> Neuordnung der Provinzen, Stärkung der Präfekturen</li>
+              <li><strong>Militär:</strong> Berufsheer, Veteranenversorgung</li>
+              <li><strong>Finanzen:</strong> Steuerreformen, Fiscus-System</li>
+              <li><strong>Infrastruktur:</strong> Straßen, Bauprogramme, Forum Augustum</li>
+              <li><strong>Kultur:</strong> Förderung von Dichtung und Kunst (z. B. Vergil, Horaz)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="quote-box" id="quote-box" hidden>
+          <blockquote>
+            „Ich fand Rom eine Stadt aus Ziegeln vor und hinterließ sie aus Marmor.“
+          </blockquote>
+          <p class="quote-note">– zugeschrieben Augustus; betont sein Bauprogramm und die Selbstdarstellung.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie" class="section">
+      <div class="container">
+        <h2>Galerie</h2>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="" alt="Büste des Augustus mit Lorbeerkranz" loading="lazy">
+            <figcaption>Büste des Augustus</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="" alt="Statue des Augustus mit ausgestrecktem Arm (Atriumhaus-Stil)" loading="lazy">
+            <figcaption>Statue von Augustus</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="" alt="Münze mit dem Porträt von Augustus" loading="lazy">
+            <figcaption>Münze mit Porträt von Augustus</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="quellen" class="section section-muted">
+      <div class="container">
+        <h2>Quellen & Bildnachweise</h2>
+        <p>
+          Historische Kerndaten und Zusammenfassung basieren auf gängigen Referenzartikeln und der deutschsprachigen Darstellung zu Augustus.
+          Details wie Geburts-/Sterbedaten, Namensverleihung 27 v. Chr. und seine Rolle als Princeps sind dort konsistent beschrieben.
+        </p>
+        <p>
+          Für Bildrecherche und weitere Kontexte zu Darstellungen (Porträt, Statue, Münzen) wurden öffentlich zugängliche Seiten konsultiert,
+          inklusive Überblicksartikeln und Museums-/Sammlungsseiten.
+        </p>
+        <p class="small">
+          Bei Verwendung in der Schule empfiehlt sich, lokale Kopien mit korrekter Quellenangabe zu nutzen und Lizenzbedingungen zu beachten.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Projekt: HTL – Geschichte & IT | Steckbrief Kaiser Augustus</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
